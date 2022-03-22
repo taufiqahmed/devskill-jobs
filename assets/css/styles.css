@@ -102,7 +102,7 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
   background-image: url('./../images/charm_circle-tick.png');
   background-position: 0px 0px;
   background-repeat: no-repeat;
-  min-height: 2rem;
+  min-height: 0rem;
   line-height: 2;
 }
 
