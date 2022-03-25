@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  margin-bottom: .4rem;
+  font-size: .9rem;
+  color: #333;
+}
