@@ -147,3 +147,13 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
+
+.footer {
+  padding: 1.2rem 2rem;
+  background-color: #F5F5FA;
+  border-top: 1px solid #E7E6F0;
+}
+
+.footer a {
+  text-decoration: none;
+}
