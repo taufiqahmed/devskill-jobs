@@ -18,7 +18,7 @@
   font-weight: 500;
 }
 
-.jobtype-tabs .nav-link.active{
+.jobtype-tabs .nav-link.active {
   color: #1977C3;
   background-color: #F5FAFF;
   border-radius: 8px;
@@ -31,4 +31,19 @@
 .jobtype-tabs .nav-link {
   padding: 0.8rem 2.6rem;
   color: #051B29;
+}
+
+.job-content-row .bordered-box {
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.job-content-row .bordered-box:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.job-content-row .bordered-box:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
