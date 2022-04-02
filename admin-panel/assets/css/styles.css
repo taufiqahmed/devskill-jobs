@@ -11,7 +11,24 @@
   font-size: 14px;
 }
 
-.left-sidebar .nav-link:focus, .left-sidebar .nav-link:hover, .left-sidebar .nav-link.active {
+.left-sidebar .nav-link:focus,
+.left-sidebar .nav-link:hover,
+.left-sidebar .nav-link.active {
   color: #1977C3;
   font-weight: 500;
+}
+
+.jobtype-tabs .nav-link.active{
+  color: #1977C3;
+  background-color: #F5FAFF;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.jobtype-tabs .nav-link {
+  padding: 0.8rem 2.6rem;
+  color: #051B29;
 }
