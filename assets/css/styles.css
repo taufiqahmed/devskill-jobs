@@ -1,8 +1,18 @@
 @import 'bs-overrides.css';
 
-.outside {
-  
+.header-nav .nav-item {
+  margin-left: 1.5rem;
+  text-transform: uppercase;
 }
+
+.header-nav .nav-link:hover, .header-nav .nav-link.actives {
+  color: #1977C3;
+}
+
+.header-nav .nav-item:last-child {
+  margin-left: 0.5rem;
+}
+
 
 section {
   margin-top: 120px;
@@ -50,7 +60,7 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
 .bordered-box {
   border-radius: 2rem;
   padding: 1rem;
-  min-height: 250px;
+  min-height: 270px;
   text-align: center;
 }
 
@@ -70,6 +80,11 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
   background-color: #DDF7FF;
 }
 
+.bg-light-purple-2 {
+  background-color: #E5E7FF;
+  ;
+}
+
 
 .hire-icons {
   background-image: url('./../images/hire-page-icons.png');
@@ -80,8 +95,9 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
 }
 .hire-icons.job { background-position: 0px 0px;}
 .hire-icons.application {background-position: -55px 0px;}
-.hire-icons.candidate {background-position: -101px 0px;}
-.hire-icons.best {background-position: -153px 0px;}
+.hire-icons.find-best {background-position: -101px 0px;}
+.hire-icons.invite {background-position: -153px 0px;}
+.hire-icons.hire {background-position: -214px 0px;}
 
 .dashboard-features {
   background: rgb(252,254,255);
