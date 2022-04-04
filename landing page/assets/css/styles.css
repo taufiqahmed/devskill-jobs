@@ -1,0 +1,175 @@
+@import 'bs-overrides.css';
+
+.header-nav .nav-item {
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-nav .nav-link:hover, .header-nav .nav-link.actives {
+  color: #1977C3;
+}
+
+.header-nav .nav-item:last-child {
+  margin-left: 0.5rem;
+}
+
+
+section {
+  margin-top: 120px;
+}
+
+.hire-banner {
+  border-radius: 2rem;
+  height: 575px;
+  /* padding: 100px 0; */
+  background: rgb(182,220,255);
+background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 100%);
+  /* background: radial-gradient(#EABDFF00, #96D9FF) ; */
+  box-shadow: inset -7px -7px 10px rgba(255, 255, 255, 0.33), inset 7px 7px 16px rgba(255, 255, 255, 0.25);
+}
+
+.hire-banner .cta-area {
+  max-width: 560px;
+  padding: 100px 56px 0;
+}
+
+.banner-back {
+  background-image: url('./../images/banner-back.png');
+  background-repeat: no-repeat;
+  background-position: right 10px;
+}
+
+.hire-banner .cta-company-logos {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.company-logos {
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+  margin-right: 15px;
+  /* outline: 1px solid red; */
+  background-image: url('./../images/hire-page-icons.png');
+}
+.airtel { background-position: -14px 73px;}
+.rtv {background-position: -94px 73px;}
+.bikroy {background-position: -174px 73px;}
+.citybank {background-position: -254px 73px;}
+
+.bordered-box {
+  border-radius: 2rem;
+  padding: 1rem;
+  min-height: 270px;
+  text-align: center;
+}
+
+.bg-light-purple {
+  background-color: #F8F3FF;
+}
+
+.bg-light-blue {
+  background-color: #D7EAFF;
+}
+
+.bg-light-biege {
+  background-color: #FFF0E9;
+}
+
+.bg-light-green {
+  background-color: #DDF7FF;
+}
+
+.bg-light-purple-2 {
+  background-color: #E5E7FF;
+  ;
+}
+
+
+.hire-icons {
+  background-image: url('./../images/hire-page-icons.png');
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+  margin-bottom: 2rem;
+}
+.hire-icons.job { background-position: 0px 0px;}
+.hire-icons.application {background-position: -55px 0px;}
+.hire-icons.find-best {background-position: -101px 0px;}
+.hire-icons.invite {background-position: -153px 0px;}
+.hire-icons.hire {background-position: -214px 0px;}
+
+.dashboard-features {
+  background: rgb(252,254,255);
+  background: linear-gradient(270deg, rgba(252,254,255,1) 0%, rgba(241,249,255,1) 70%, rgba(250,243,255,1) 100%);
+  box-shadow: inset -7px -7px 10px rgba(255, 255, 255, 0.33), inset 7px 7px 16px rgba(255, 255, 255, 0.25);
+  border-radius: 2rem;
+  padding: 4rem 3rem;
+}
+
+.icon-list {
+  padding-left: 0;
+}
+
+.icon-list li {
+  list-style: none;
+  padding-left: 2.8rem;
+  margin-bottom: 2rem;
+  background-image: url('./../images/charm_circle-tick.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  min-height: 0rem;
+  line-height: 2;
+}
+
+.dashboard-preview {
+  box-shadow: -6px 14px 60px 2px rgba(29, 112, 203, 0.14);
+  border-radius: 1rem;
+  margin: 3rem 3rem;
+}
+
+
+
+.pricing-container {
+  background: radial-gradient(149.59% 324.52% at -17.47% -12.23%, rgba(19, 117, 188, 0.12) 0%, rgba(129, 126, 244, 0.12) 100%);
+  border: 1px solid #ADACBD;
+  border-radius: 1rem;
+}
+
+.pricing-container .price-box {
+  padding: 1.5rem;
+}
+
+.price-box.middle {
+  border-left: 1px solid #ADACBD;
+  border-right: 1px solid #ADACBD;
+}
+
+.price-box .per-job {
+  margin-top: -10px;
+}
+
+.price-box .price-area {
+  text-align: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #ADACBD;
+}
+
+.plans-feature {
+  margin-top: 2rem;
+}
+
+.plans-feature li {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footer {
+  padding: 1.2rem 2rem;
+  background-color: #F5F5FA;
+  border-top: 1px solid #E7E6F0;
+}
+
+.footer a {
+  text-decoration: none;
+}
