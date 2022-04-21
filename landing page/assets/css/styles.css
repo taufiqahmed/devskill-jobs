@@ -1,11 +1,12 @@
 @import 'bs-overrides.css';
 
 .header-nav .nav-item {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   text-transform: uppercase;
 }
 
-.header-nav .nav-link:hover, .header-nav .nav-link.actives {
+.header-nav .nav-link:hover,
+.header-nav .nav-link.actives {
   color: #1977C3;
 }
 
@@ -21,9 +22,9 @@ section {
 .hire-banner {
   border-radius: 2rem;
   height: 575px;
-  /* padding: 100px 0; */
-  background: rgb(182,220,255);
-background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 100%);
+  padding: 100px 0;
+  background: rgb(182, 220, 255);
+  background: linear-gradient(310deg, rgba(182, 220, 255, 1) 0%, rgba(252, 248, 255, 1) 100%);
   /* background: radial-gradient(#EABDFF00, #96D9FF) ; */
   box-shadow: inset -7px -7px 10px rgba(255, 255, 255, 0.33), inset 7px 7px 16px rgba(255, 255, 255, 0.25);
 }
@@ -52,10 +53,22 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
   /* outline: 1px solid red; */
   background-image: url('./../images/hire-page-icons.png');
 }
-.airtel { background-position: -14px 73px;}
-.rtv {background-position: -94px 73px;}
-.bikroy {background-position: -174px 73px;}
-.citybank {background-position: -254px 73px;}
+
+.airtel {
+  background-position: -14px 73px;
+}
+
+.rtv {
+  background-position: -94px 73px;
+}
+
+.bikroy {
+  background-position: -174px 73px;
+}
+
+.citybank {
+  background-position: -254px 73px;
+}
 
 .bordered-box {
   border-radius: 2rem;
@@ -93,15 +106,30 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
   width: 56px;
   margin-bottom: 2rem;
 }
-.hire-icons.job { background-position: 0px 0px;}
-.hire-icons.application {background-position: -55px 0px;}
-.hire-icons.find-best {background-position: -101px 0px;}
-.hire-icons.invite {background-position: -153px 0px;}
-.hire-icons.hire {background-position: -214px 0px;}
+
+.hire-icons.job {
+  background-position: 0px 0px;
+}
+
+.hire-icons.application {
+  background-position: -55px 0px;
+}
+
+.hire-icons.find-best {
+  background-position: -101px 0px;
+}
+
+.hire-icons.invite {
+  background-position: -153px 0px;
+}
+
+.hire-icons.hire {
+  background-position: -214px 0px;
+}
 
 .dashboard-features {
-  background: rgb(252,254,255);
-  background: linear-gradient(270deg, rgba(252,254,255,1) 0%, rgba(241,249,255,1) 70%, rgba(250,243,255,1) 100%);
+  background: rgb(252, 254, 255);
+  background: linear-gradient(270deg, rgba(252, 254, 255, 1) 0%, rgba(241, 249, 255, 1) 70%, rgba(250, 243, 255, 1) 100%);
   box-shadow: inset -7px -7px 10px rgba(255, 255, 255, 0.33), inset 7px 7px 16px rgba(255, 255, 255, 0.25);
   border-radius: 2rem;
   padding: 4rem 3rem;
@@ -172,4 +200,38 @@ background: linear-gradient(310deg, rgba(182,220,255,1) 0%, rgba(252,248,255,1) 
 
 .footer a {
   text-decoration: none;
+}
+
+/* ipad and tablets css starts */
+@media screen and (max-width: 768px) {
+  .header-nav .nav-item {
+    font-size: 0.825rem;
+    margin-left: 1rem;
+  }
+
+  .hire-banner {
+    padding: 2rem 1.5rem;
+    max-height: 345px;
+  }
+
+  .hire-banner .cta-area {
+    max-width: 300px;
+    padding: 0;
+    
+  }
+
+  .hire-banner .cta-area h1 {
+    font-size: 1.8rem;
+  }
+  .hire-banner .cta-area p {
+    font-size: 1rem;
+  }
+  .cta-area .btn-lg {
+    padding: 0.875rem 2rem;
+  }
+
+  .banner-back {
+    background-size: 340px;
+  }
+  
 }

@@ -51,3 +51,45 @@
 .job-content-row .dropdown-toggle:after {
   content:none;
 }
+
+
+/* job search with checkbox */
+.job-search-box {
+  padding: 1.5rem 1rem;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+}
+
+.job-search-list li{
+  padding:0.5rem 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::after {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::after {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/* job search with checkbox ends */

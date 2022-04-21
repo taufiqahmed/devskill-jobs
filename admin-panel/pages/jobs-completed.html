@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs</title>
+  <!-- bootstap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- local styles -->
+  <link href="./assets/css/styles.css" rel="stylesheet">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dev Skill</a>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/charm_circle-tick.png" alt="company_logo">
+            <span>Proggasoft</span>
+          </div>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- header ends-->
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      <!-- left menu -->
+      <div class="col-auto col-md-3 col-xl-2 left-sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-grid-1x2-fill me-2"></span>
+                <span>Dashboard</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active d-flex justify-content-between" aria-current="page" href="#">
+              <div>
+                <span class="bi-briefcase-fill me-2"></span>
+                <span>Jobs</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-people-fill me-2"></span>
+                <span>Candidate Pool</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-gear-fill me-2"></span>
+                <span>Settings</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-question-circle-fill me-2"></span>
+                <span>Help</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- left menu ends-->
+
+      <!-- Content area -->
+
+
+      <div class="col p-5">
+
+        <div class="row justify-content-end">
+          <div class="col-2">
+            <div class="text-end">
+              <button class="btn btn-primary">Create Job</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jobs Menu -->
+        <ul class="nav nav-tabs mt-4 jobtype-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Completed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Archived</a>
+          </li>
+        </ul>
+        <!-- Jobs Menu Ends -->
+
+        <!-- header row -->
+        <div class="row mt-4 no-gutter">
+          <div class="col">&nbsp;</div>
+          <div class="col">
+            <div class="row fs-6">
+              <div class="col">Publishing Date</div>
+              <div class="col">Deadline</div>
+              <div class="col">Applied</div>
+              <div class="col text-end">Action</div>
+
+            </div>
+          </div>
+        </div>
+        <!-- header row ends -->
+
+        <!-- table content row -->
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col bordered-box">
+            <div>
+              <h5 class="mb-0">Job Title Front End</h5>
+              <div class="mb-2 fs-6">Employment Type: Part Time</div>
+              <div class="d-flex justify-content-between">
+                <small>Posted on: Sep 11, 2012</small>
+                <small>Created by: Jalal Uddin</small>
+              </div>
+            </div>
+          </div>
+          <div class="col bordered-box">
+            <div class="row">
+              <div class="col">Sep 13, 2021</div>
+              <div class="col">Oct 14, 2021</div>
+              <div class="col">
+                <span>15</span>
+                <br>
+                <span class="text-primary">In Review</span>
+                <span class="text-success">Accepted, Payment Required</span>
+              </div>
+              <div class="col text-end">
+                <div class="d-flex">
+                  <div><button class="btn btn-primary btn-sm me-2">Pay Now</button></div>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- table content row ends -->
+
+      </div>
+
+      <!-- Content area ends-->
+
+    </div>
+  </div>
+
+</body>
+
+</html>
