@@ -43,13 +43,14 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .job-content-row .bordered-box:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .job-content-row .dropdown-toggle:after {
-  content:none;
+  content: none;
 }
 
 
@@ -60,15 +61,18 @@
   border-radius: 4px;
 }
 
-.job-search-list li{
-  padding:0.5rem 0;
+.job-search-list li {
+  padding: 0.5rem 0;
 }
 
 .caret {
   cursor: pointer;
-  -webkit-user-select: none; /* Safari 3.1+ */
-  -moz-user-select: none; /* Firefox 2+ */
-  -ms-user-select: none; /* IE 10+ */
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
 }
 
@@ -80,9 +84,11 @@
 }
 
 .caret-down::after {
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Safari */
-  transform: rotate(90deg);  
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  transform: rotate(90deg);
 }
 
 .nested {
@@ -92,4 +98,12 @@
 .active {
   display: block;
 }
+
 /* job search with checkbox ends */
+
+.tag {
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #893FAB;
+  border-radius: 4px;
+}
