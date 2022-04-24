@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- local styles -->
-  <link href="./assets/css/styles.css" rel="stylesheet">
+  <link href="./../assets/css/styles.css" rel="stylesheet">
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
         <li class="nav-item dropdown">
           <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="assets/images/charm_circle-tick.png" alt="company_logo">
+            <img src="./../assets/images/charm_circle-tick.png" alt="company_logo">
             <span>Proggasoft</span>
           </div>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -113,7 +113,7 @@
         <!-- Jobs Menu -->
         <ul class="nav nav-tabs mt-4 jobtype-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active Jobs</a>
+            <a class="nav-link" aria-current="page" href="#">Active Jobs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pending</a>
@@ -122,66 +122,150 @@
             <a class="nav-link" href="#">Completed</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Archived</a>
+            <a class="nav-link active" href="#">Archived</a>
           </li>
         </ul>
         <!-- Jobs Menu Ends -->
-
-        <!-- header row -->
-        <div class="row mt-4 no-gutter">
-          <div class="col">&nbsp;</div>
+        <div class="row">
           <div class="col">
-            <div class="row fs-6">
-              <div class="col">Publishing Date</div>
-              <div class="col">Deadline</div>
-              <div class="col">Applied</div>
-              <div class="col text-end">Action</div>
-
-            </div>
-          </div>
-        </div>
-        <!-- header row ends -->
-
-        <!-- table content row -->
-        <div class="row my-2 no-gutter job-content-row">
-          <div class="col bordered-box">
-            <div>
-              <h5 class="mb-0">Job Title Front End</h5>
-              <div class="mb-2 fs-6">Employment Type: Part Time</div>
-              <div class="d-flex justify-content-between">
-                <small>Posted on: Sep 11, 2012</small>
-                <small>Created by: Jalal Uddin</small>
-              </div>
-            </div>
-          </div>
-          <div class="col bordered-box">
-            <div class="row">
-              <div class="col">Sep 13, 2021</div>
-              <div class="col">Oct 14, 2021</div>
+            <!-- header row -->
+            <div class="row mt-4 no-gutter">
+              <div class="col">&nbsp;</div>
               <div class="col">
-                <span>15</span>
-                <br>
-                <span class="text-primary">In Review</span>
-                <span class="text-success">Accepted, Payment Required</span>
+                <div class="row fs-6">
+                  <div class="col">Job Duration</div>
+                  <div class="col">Applied</div>
+                  <div class="col">Status</div>
+                  <div class="col text-end">Action</div>
+
+                </div>
               </div>
-              <div class="col text-end">
-                <div class="d-flex">
-                  <div><button class="btn btn-primary btn-sm me-2">Pay Now</button></div>
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi-three-dots-vertical"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Edit</a></li>
-                      <li><a class="dropdown-item" href="#">Delete</a></li>
-                    </ul>
+            </div>
+            <!-- header row ends -->
+            <!-- table content row -->
+            <div class="row my-2 no-gutter job-content-row">
+              <div class="col bordered-box">
+                <div>
+                  <h5 class="mb-0">Job Title Front End</h5>
+                  <div class="mb-2 fs-6">Employment Type: Part Time</div>
+                  <div class="d-flex justify-content-between">
+                    <small>Posted on: Sep 11, 2012</small>
+                    <small>Created by: Jalal Uddin</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col bordered-box">
+                <div class="row">
+                  <div class="col">Sep 01 - Oct 05</div>
+                  <div class="col">15</div>
+                  <div class="col">
+                    Hired
+                  </div>
+                  <div class="col text-end">
+                    <div><button class="btn btn-primary btn-sm me-2">Pay Now</button></div>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi-three-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- table content row ends -->
           </div>
+          <!-- search job area start -->
+          <div class="col-3">
+            <div class="job-search-box mt-3">
+              <input type="text" class="form-control search" placeholder="Search Job..">
+
+              <form>
+                <ul id="myUL" class="list-unstyled job-search-list">
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                        <input class="form-check-input" type="checkbox" id="">
+                        <label class="form-check-label" for="employment">
+                          Employment
+                        </label>
+                      </div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
+                    <ul class="nested">
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="fulltime">
+                          <label class="form-check-label" for="fulltime">
+                            Full Time
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="parttime">
+                          <label class="form-check-label" for="parttime">
+                            Part Time
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="intern">
+                          <label class="form-check-label" for="intern">
+                            Internship
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="contract">
+                          <label class="form-check-label" for="contract">
+                            Contract
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                        <input class="form-check-input" type="checkbox" id="">
+                        <label class="form-check-label" for="">
+                          By Posted Date
+                        </label>
+                      </div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
+                    <div class="nested form-group mt-3">
+                      <input type="date" class="form-control">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                        <input class="form-check-input" type="checkbox" id="">
+                        <label class="form-check-label" for="">
+                          By Completed Date
+                        </label>
+                      </div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
+                    <div class="nested form-group mt-3">
+                      <input type="date" class="form-control">
+                    </div>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <!-- search job area end -->
         </div>
-        <!-- table content row ends -->
+
 
       </div>
 
@@ -189,7 +273,17 @@
 
     </div>
   </div>
+  <script>
+    var toggler = document.getElementsByClassName("expand");
+    var i;
 
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function () {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.parentElement.querySelector(".bi-chevron-down").classList.toggle("bi-chevron-up");
+      });
+    }
+  </script>
 </body>
 
 </html>

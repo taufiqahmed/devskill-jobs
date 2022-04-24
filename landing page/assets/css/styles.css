@@ -22,7 +22,6 @@ section {
 .hire-banner {
   border-radius: 2rem;
   height: 575px;
-  padding: 100px 0;
   background: rgb(182, 220, 255);
   background: linear-gradient(310deg, rgba(182, 220, 255, 1) 0%, rgba(252, 248, 255, 1) 100%);
   /* background: radial-gradient(#EABDFF00, #96D9FF) ; */

@@ -181,23 +181,83 @@
             </div>
             <!-- table content row ends -->
           </div>
-          <!-- searc job area start -->
+          <!-- search job area start -->
           <div class="col-3">
             <div class="job-search-box mt-3">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control search" placeholder="Search Job..">
 
               <form>
                 <ul id="myUL" class="list-unstyled job-search-list">
-                  <li><input type="checkbox"><span class="caret">Employment Type</span>
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                      <input class="form-check-input" type="checkbox" id="">
+                      <label class="form-check-label" for="employment">
+                        Employment
+                      </label></div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
                     <ul class="nested">
-                      <li><input type="checkbox">Part Time</li>
-                      <li><input type="checkbox">Full Time</li>
-                      <li><input type="checkbox">Internship</li>
-                      <li><input type="checkbox">Contract</li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="fulltime">
+                          <label class="form-check-label" for="fulltime">
+                            Full Time
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="parttime">
+                          <label class="form-check-label" for="parttime">
+                            Part Time
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="intern">
+                          <label class="form-check-label" for="intern">
+                            Internship
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="contract">
+                          <label class="form-check-label" for="contract">
+                            Contract
+                          </label>
+                        </div>
+                      </li>
                     </ul>
                   </li>
-                  <li><input type="checkbox"><span class="caret">By Posted Date</span>
-                  <li><input type="checkbox"><span class="caret">By Completed Date</span>
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                      <input class="form-check-input" type="checkbox" id="">
+                      <label class="form-check-label" for="">
+                        By Posted Date
+                      </label></div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
+                    <div class="nested form-group mt-3">
+                      <input type="date" class="form-control">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check expand d-flex justify-content-between">
+                      <div>
+                      <input class="form-check-input" type="checkbox" id="">
+                      <label class="form-check-label" for="">
+                        By Completed Date
+                      </label></div>
+                      <i class="bi bi-chevron-down ml-auto"></i>
+                    </div>
+                    <div class="nested form-group mt-3">
+                      <input type="date" class="form-control">
+                    </div>
+                  </li>
                 </ul>
               </form>
             </div>
@@ -215,13 +275,13 @@
   </div>
 
   <script>
-    var toggler = document.getElementsByClassName("caret");
+    var toggler = document.getElementsByClassName("expand");
     var i;
 
     for (i = 0; i < toggler.length; i++) {
       toggler[i].addEventListener("click", function () {
         this.parentElement.querySelector(".nested").classList.toggle("active");
-        this.classList.toggle("caret-down");
+        this.parentElement.querySelector(".bi-chevron-down").classList.toggle("bi-chevron-up");
       });
     }
   </script>
