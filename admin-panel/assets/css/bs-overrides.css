@@ -19,6 +19,7 @@ body {
 
 .btn-sm {
   font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
 }
 
 .btn-long {
@@ -36,9 +37,10 @@ body {
 }
 
 .fs-6 {
-  font-size: 0.875rem!important;
+  font-size: 0.875rem !important;
 }
 
-.small, small {
+.small,
+small {
   font-size: 0.75rem;
 }
