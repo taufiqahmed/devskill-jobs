@@ -17,6 +17,10 @@ body {
   font-weight: 600;
 }
 
+.btn-sm {
+  font-size: 0.75rem;
+}
+
 .btn-long {
   padding: 0.6rem 4rem;
 }
