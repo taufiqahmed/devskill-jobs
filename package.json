@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve": "sergey --watch",
+    "start": "sergey"
+  },
+  "dependencies": {
+    "sergey": "^0.0.13"
+  }
+
+}

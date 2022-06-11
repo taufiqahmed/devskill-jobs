@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview Job</title>
+  <!-- bootstap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- local styles -->
+  <link href="./assets/css/styles.css" rel="stylesheet">
+  <link href="./assets/css/create-job-post.css" rel="stylesheet">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="logo" srcset="" height="36">
+      </a>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/charm_circle-tick.png" alt="company_logo">
+            <span>Proggasoft</span>
+          </div>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- header ends-->
+
+  <div class="container-sm mt-3 preview-job">
+
+    <div class="inner-box">
+
+      <button type="button" class="btn-close" aria-label="Close"></button>
+
+      <h4 class="text-center py-3 fw-normal">Create Job Post</h4>
+
+      <ol class="list-unstyled wizard py-4 mb-5">
+        <li class="">Job Information </li>
+        <li class="">Descriptions </li>
+        <li class="current">Preview</li>
+      </ol>
+
+      <h4 class="my-4">Job Title</h4>
+
+      <div class="row g-5">
+        <div class="col">
+
+          <h6>Position Description</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minima laborum ipsam nihil doloremque
+            fuga, soluta veniam aut, rerum laboriosam accusamus! Ipsum libero esse quo. Quam libero fugiat commodi?
+            Alias.</p>
+
+          <h6>Responsibilities</h6>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+
+          <h6>Requirements</h6>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+
+          <h6>Benefits</h6>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+
+        </div>
+        <div class="col-4">
+          <p>Department: <strong>IT</strong></p>
+          <p>Employment Type: <strong>Full Time</strong></p>
+          <p>Location: <strong>Dhaka</strong></p>
+          <p>Salary: <strong>Negotiable</strong></p>
+          <p>Tags: <span class="tag mr-2">React</span> <span class="tag">Design</span></p>
+
+          <br>
+          <p>Created By: <strong>Jalal Uddin</strong></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="text-center py-3 mt-5">
+      <i class="bi-exclamation-circle-fill pe-2"></i>
+      This job post will be reviewed by Dev Skill before being active.
+    </p>
+
+    <div class="d-flex justify-content-around p-5 mb-5">
+      <button class="btn btn-outline-primary btn-long"><i class="bi-pencil me-2"></i> Edit</button>
+      <button class="btn btn-primary btn-long">Post Job</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

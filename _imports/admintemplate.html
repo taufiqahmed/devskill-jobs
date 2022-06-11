@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <sergey-import src="htmlhead">
+    <title>Active Jobs</title>
+  </sergey-import>
+</head>
+
+<body>
+
+  <!-- header -->
+  <sergey-import src="adminheader" />
+  <!-- header ends-->
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      <!-- left menu -->
+      <div class="col-auto col-md-3 col-xl-2 left-sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-grid-1x2-fill me-2"></span>
+                <span>Dashboard</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active d-flex justify-content-between" aria-current="page" href="#">
+              <div>
+                <span class="bi-briefcase-fill me-2"></span>
+                <span>Jobs</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-people-fill me-2"></span>
+                <span>Candidate Pool</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-gear-fill me-2"></span>
+                <span>Settings</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-question-circle-fill me-2"></span>
+                <span>Help</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- left menu ends-->
+
+      <!-- Content area -->
+
+      <sergey-slot />
+
+      <!-- Content area ends-->
+
+    </div>
+  </div>
+
+  <script>
+    var toggler = document.getElementsByClassName("expand");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function () {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.parentElement.querySelector(".bi-chevron-down").classList.toggle("bi-chevron-up");
+      });
+    }
+  </script>
+
+</body>
+
+</html>

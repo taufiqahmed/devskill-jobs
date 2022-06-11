@@ -1,0 +1,220 @@
+<sergey-import src="admintemplate">
+
+
+  <div class="col p-5">
+
+    <div class="d-flex justify-content-between">
+      <h3><a href=""><i class="bi bi-chevron-left"></i></a> Front end developer</h3>
+      <button class="btn btn-primary">Stop Recruiting</button>
+    </div>
+
+    <!-- Jobs Menu -->
+    <ul class="nav nav-tabs mt-4 jobtype-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Candiates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Short List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Waiting List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Job Post</a>
+      </li>
+    </ul>
+    <!-- Jobs Menu Ends -->
+
+    <!-- table start -->
+
+    <div class="row">
+      <div class="col">
+        <!-- header row -->
+        <div class="row mt-4 no-gutter">
+          <div class="col">&nbsp;</div>
+          <div class="col">
+            <table class="table table-sm table-borderless fs-6 mb-0 job-candidate-table table-fixed">
+              <tr>
+                <td>Applied on</td>
+                <td>Expected Salary</td>
+                <td class="text-center">Status</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- header row ends -->
+
+        <!-- table content row -->
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-success">New</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-primary">Action Needed</span></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-info">Shortlisted</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-danger">Rejected</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- table content row ends -->
+      </div>
+
+      <!-- search job area start -->
+      <div class="col-3">
+        <div class="job-search-box mt-3 ms-5">
+          <input type="text" class="form-control search" placeholder="Search Candiates..">
+
+          <form>
+            <ul id="myUL" class="list-unstyled job-search-list">
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="employment">
+                      Assessment Status
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <ul class="nested">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="fulltime">
+                      <label class="form-check-label" for="fulltime">
+                        Required
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="parttime">
+                      <label class="form-check-label" for="parttime">
+                        Completed
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="">
+                      Participation Date
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <div class="nested form-group mt-3">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="">
+                      Score
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <div class="nested form-group mt-3">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <!-- search job area end -->
+    </div>
+
+    <!-- table ends -->
+
+
+  </div>
+
+
+</sergey-import>

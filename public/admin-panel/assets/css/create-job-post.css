@@ -1,0 +1,100 @@
+@media (min-width: 768px) {
+  .container-sm {
+    max-width: 860px;
+  }
+
+  .container-sm.preview-job {
+    max-width: 1047px;
+  }
+}
+
+.inner-box {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 2rem 5rem;
+  margin-bottom: 1rem;
+}
+
+.preview-job .inner-box {
+  padding: 2.5rem;
+}
+
+.btn-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+/* wizard step */
+
+ol.wizard {
+	position: relative;
+	overflow: hidden;
+	counter-reset: wizard;
+}
+.wizard li {
+	position: relative;
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+	font-size: 0.875rem;
+}
+.wizard .current {
+  font-weight: 600;
+}
+.wizard .current ~ li {
+	color: #555;
+}
+.wizard li:before {
+	counter-increment: wizard;
+	content: counter(wizard);
+	display: block;
+	color: white;
+	background-color: #893FAB;
+	border: 2px solid #893FAB;
+	text-align: center;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	border-radius: 2em;
+	position: relative;
+	left: 50%;
+	margin-bottom: 1em;
+	margin-left: -1em;
+	z-index: 1;
+}
+.wizard .current ~ li:before {
+	background-color: #fff;
+	color: #555;
+	border-color: #555;
+}
+.wizard li + li:after {
+	content: "";
+	display: block;
+	width: 100%;
+	background-color: #893FAB;
+	height: 2px;
+	position: absolute;
+	left: -50%;
+	top: 1em;
+	z-index: 0;
+}
+.wizard .current ~ li:after {
+	background-color: #555;
+}
+
+
+/* wizard steps end */

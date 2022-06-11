@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Jobs</title>
+  
+  <!-- bootstap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- local styles -->
+  <link href="./../../assets/css/styles.css" rel="stylesheet">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dev Skill</a>
+
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="./../../assets/images/charm_circle-tick.png" alt="company_logo">
+          <span>Proggasoft</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!-- header ends-->
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      <!-- left menu -->
+      <div class="col-auto col-md-3 col-xl-2 left-sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-grid-1x2-fill me-2"></span>
+                <span>Dashboard</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active d-flex justify-content-between" aria-current="page" href="#">
+              <div>
+                <span class="bi-briefcase-fill me-2"></span>
+                <span>Jobs</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-people-fill me-2"></span>
+                <span>Candidate Pool</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-gear-fill me-2"></span>
+                <span>Settings</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between" aria-current="page" href="#">
+              <div><span class="bi-question-circle-fill me-2"></span>
+                <span>Help</span>
+              </div>
+              <span class="bi-chevron-right"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- left menu ends-->
+
+      <!-- Content area -->
+
+      <div class="col p-5">
+
+    <div class="d-flex justify-content-between">
+      <h3><a href=""><i class="bi bi-chevron-left"></i></a> Front end developer</h3>
+      <button class="btn btn-primary">Stop Recruiting</button>
+    </div>
+
+    <!-- Jobs Menu -->
+    <ul class="nav nav-tabs mt-4 jobtype-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Candiates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Short List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Waiting List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Job Post</a>
+      </li>
+    </ul>
+    <!-- Jobs Menu Ends -->
+
+    <!-- table start -->
+
+    <div class="row">
+      <div class="col">
+        <!-- header row -->
+        <div class="row mt-4 no-gutter">
+          <div class="col">&nbsp;</div>
+          <div class="col">
+            <table class="table table-sm table-borderless fs-6 mb-0 job-candidate-table table-fixed">
+              <tr>
+                <td>Applied on</td>
+                <td>Expected Salary</td>
+                <td class="text-center">Status</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- header row ends -->
+
+        <!-- table content row -->
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-success">New</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-primary">Action Needed</span></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-info">Shortlisted</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row my-2 no-gutter job-content-row">
+          <div class="col-md-6 bordered-box">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/45" alt="" class="candiate-avatar">
+              <div class="ms-2">
+                <h5 class="mb-0">Taufiq Ahmed</h5>
+                <div class="d-flex justify-content-between">
+                  <small>Frontend Developer <span class="text-muted">at Daraz</span> Dhaka, Bangladesh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bordered-box">
+            <table class="table table-sm table-borderless fs-6 mb-0 table-fixed">
+              <tr>
+                <td>5th Sept 2021</td>
+                <td>35,000-45,000</td>
+                <td class="text-center"><span class="status-pill status-danger">Rejected</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- table content row ends -->
+      </div>
+
+      <!-- search job area start -->
+      <div class="col-3">
+        <div class="job-search-box mt-3 ms-5">
+          <input type="text" class="form-control search" placeholder="Search Candiates..">
+
+          <form>
+            <ul id="myUL" class="list-unstyled job-search-list">
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="employment">
+                      Assessment Status
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <ul class="nested">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="fulltime">
+                      <label class="form-check-label" for="fulltime">
+                        Required
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="parttime">
+                      <label class="form-check-label" for="parttime">
+                        Completed
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="">
+                      Participation Date
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <div class="nested form-group mt-3">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+              <li>
+                <div class="form-check expand d-flex justify-content-between">
+                  <div>
+                    <input class="form-check-input" type="checkbox" id="">
+                    <label class="form-check-label" for="">
+                      Score
+                    </label>
+                  </div>
+                  <i class="bi bi-chevron-down ml-auto"></i>
+                </div>
+                <div class="nested form-group mt-3">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <!-- search job area end -->
+    </div>
+
+    <!-- table ends -->
+
+
+  </div>
+
+      <!-- Content area ends-->
+
+    </div>
+  </div>
+
+  <script>
+    var toggler = document.getElementsByClassName("expand");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function () {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.parentElement.querySelector(".bi-chevron-down").classList.toggle("bi-chevron-up");
+      });
+    }
+  </script>
+
+</body>
+
+</html>
